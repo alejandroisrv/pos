@@ -2,6 +2,7 @@
 require_once "vendor/autoload.php";
 include 'class/database.php';
 include 'class/ventas.php';
+include 'class/pedidos.php';
 setlocale(LC_MONETARY,"es_PE");
 $conexion    =  new database();
 $ventasClass=new ventas($conexion);
