@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['usuario'])){
   switch ($_SESSION['rol-user']) {
     case 'caja':
-        header('location:pos');
+        header('location:pos.php');
       break;
     case 'admin':
         header('location:admin');
