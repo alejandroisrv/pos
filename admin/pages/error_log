@@ -1,0 +1,12 @@
+[27-Apr-2019 20:37:31 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'usuario' in where clause is ambiguous in /home3/pando1991/inventario/class/ventas.php:42
+Stack trace:
+#0 /home3/pando1991/inventario/class/ventas.php(42): PDOStatement->execute()
+#1 /home3/pando1991/inventario/admin/pages/balance.php(28): ventas->getVentas('2018-03-24', '2019-04-27')
+#2 {main}
+  thrown in /home3/pando1991/inventario/class/ventas.php on line 42
+[27-Apr-2019 21:12:31 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=='domicilios.com' ORDER BY fecha DESC' at line 1 in /home3/pando1991/inventario/class/pedidos.php:100
+Stack trace:
+#0 /home3/pando1991/inventario/class/pedidos.php(100): PDOStatement->execute()
+#1 /home3/pando1991/inventario/admin/pages/ventas-reporte.php(27): pedidos->getDomiciliosAdmin('2019-03-24', '2019-04-27')
+#2 {main}
+  thrown in /home3/pando1991/inventario/class/pedidos.php on line 100

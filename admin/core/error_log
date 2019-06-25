@@ -1,0 +1,8 @@
+[29-Apr-2019 15:28:27 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'producto' cannot be null in /home3/pando1991/inventario/class/productos.php:32
+Stack trace:
+#0 /home3/pando1991/inventario/class/productos.php(32): PDOStatement->execute(Array)
+#1 /home3/pando1991/inventario/admin/core/editProducts.php(16): productos->addProduct(NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#2 {main}
+  thrown in /home3/pando1991/inventario/class/productos.php on line 32
+[12-Jun-2019 16:00:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/pando1991/inventario/admin/core/modifyCantidad.php on line 15
+[12-Jun-2019 19:23:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home3/pando1991/inventario/admin/core/modifyCantidad.php on line 15

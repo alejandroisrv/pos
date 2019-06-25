@@ -1,0 +1,25 @@
+
+
+            body{
+                color: white !important;
+                background: #131313 !important;
+
+            }
+            .table td, .table th{
+                border-top: 1px solid #2a2a2a !important;
+                color:white !important;
+            }
+            .form-control, .form-control-plaintext{
+                  background-color: #232323 !important;
+                  color: white !important;
+            }
+
+
+            .modal-content {
+                  background-color: #232323 !important;
+                  color: white !important;
+
+            }
+            .card{
+                background-color:#222 !important;
+            }

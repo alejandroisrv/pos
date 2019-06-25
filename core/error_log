@@ -1,0 +1,23 @@
+[16-Jun-2019 21:34:21 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home3/pando1991/inventario/core/rechazarPedido.php:8
+Stack trace:
+#0 /home3/pando1991/inventario/core/rechazarPedido.php(8): PDO->query('SELECT codigo F...')
+#1 {main}
+  thrown in /home3/pando1991/inventario/core/rechazarPedido.php on line 8
+[22-Jun-2019 19:54:31 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'usuario' cannot be null in /home3/pando1991/inventario/class/pedidos.php:59
+Stack trace:
+#0 /home3/pando1991/inventario/class/pedidos.php(59): PDOStatement->execute(Array)
+#1 /home3/pando1991/inventario/core/closeSell.php(19): pedidos->hacerPedido('pedido atrasado...', 'efectivo', '141', NULL, '985965223')
+#2 {main}
+  thrown in /home3/pando1991/inventario/class/pedidos.php on line 59
+[22-Jun-2019 22:16:18 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home3/pando1991/inventario/class/cajachica.php:74
+Stack trace:
+#0 /home3/pando1991/inventario/class/cajachica.php(74): PDO->query('UPDATE gastos S...')
+#1 /home3/pando1991/inventario/core/cerrarCaja.php(9): cajachica->cerrarCaja()
+#2 {main}
+  thrown in /home3/pando1991/inventario/class/cajachica.php on line 74
+[22-Jun-2019 22:18:36 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'usuario' cannot be null in /home3/pando1991/inventario/class/pedidos.php:59
+Stack trace:
+#0 /home3/pando1991/inventario/class/pedidos.php(59): PDOStatement->execute(Array)
+#1 /home3/pando1991/inventario/core/closeSell.php(19): pedidos->hacerPedido('', 'efectivo', '40', NULL, '')
+#2 {main}
+  thrown in /home3/pando1991/inventario/class/pedidos.php on line 59
