@@ -27,7 +27,13 @@ foreach($ventas as $venta){
     "price"=>$venta['precio']);
     array_push($productos,$producto) ;
 }
-
-var_dump($ventaGeneral);
 ?>
 
+
+<table>
+  <tr><td>LICORERIA SUCRE</td></tr>
+  <tr><td>TELEFONO</td><td>(01) 480-0167  943 727 483</td></tr>
+  <tr><td>DIRECCION</td><td>SUCRE S/N P. LIBRE | LIMA S/N  BARRANCO</td></tr>
+  <tr><td><?php echo date('d/m/y') ?> </td><td><?php echo date('H:i:s') ?></td></tr>
+  <tr><td><?php echo "========================================"?> </td></tr>
+</table>
