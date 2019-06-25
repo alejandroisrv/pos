@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+
+.tabla-balance{
+width:25%;
+padding:3px !important;
+
+}
+.tabla-balance-right{
+  text-align: right;
+}
+.tabla-balance-left{
+  text-align: left;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  font-stretch: expanded;
+}
+
+div{
+  padding:5px 8px;
+}
+table,tr,th,td{
+    text-align: left;
+    padding:5px 8px;
+}
+table{
+  margin-bottom: 5px;
+  width: 100%;
+}
+.center{
+  text-align: center !important;
+
+}
+
+
+.table{
+  font-size: 0.93rem;
+  padding:4px 8px;
+
+}
+.align{
+    text-align:right !important;
+}
+.lead{
+}
+.total,.total-balance{
+  font-size: 1.2rem;
+}
+
+.td-right{
+  width: 30%;
+}
+.total-balance{
+
+  font-weight:bold;
+
+}
+.table{
+  width: 90% !important;
+}
+
+img{
+  width: 60px;
+  display: inline-block;
+}
+
+h2{ line-height:12px;
+  font-weight: 400;
+  display: inline-block;
+}
+.fl-right{
+  margin-left: 90%;
+  font-size: 0.8rem;
+}
