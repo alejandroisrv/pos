@@ -4,9 +4,8 @@ include 'class/database.php';
 include 'class/ventas.php';
 setlocale(LC_MONETARY,"es_PE");
 $conexion    =  new database();
-$sale =  new ventas($conexion);
-$ventas=$sale->getVentaAdmin($_GET['codigo']);
-$ventasGeneral=$sale->getVenta($_GET['codigo']);
+$ventasClass=new ventas($conexion);
+$pedidosClass=new pedidos($conexion);
 $stylesheet = file_get_contents('bootstrap4.3.min.css');
 $name="LocalSucre ".$_GET['codigo'].".pdf";
 $tipoText="Venta en el local";
@@ -18,6 +17,7 @@ if($_GET['pedido']){
 }else{
   $ventaGeneral=$ventasClass->getVenta($codigo);
 }
+$ventas=$ventasClass->getVentaAdmin($codigo);
 $html="
     <table>
     <tr></tr>
@@ -34,10 +34,7 @@ $html="
     </table>
     <table>
       <thead>
-        <tr>
-        <th class='align'>CANT</th>
-        <th>ARTICULO</th>
-        <th>PRECIO</th>
+        <tr><th class='align'>CANT</th><th>ARTICULO</th><th>PRECIO</th>
         </tr>
       </thead>
       <tbody>";
